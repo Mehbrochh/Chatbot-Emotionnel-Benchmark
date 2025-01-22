@@ -64,9 +64,10 @@ python argparse_qa.py --models gpt-4o-mini --prompts basic_qa
 a -> Éditez **Utils/prompts.py** :
 
     def mon_prompt_perso(question: str, context: str) -> str:
+        max_len = get_max_context_length(model_name, question)
         return f"""**Ma stratégie**
     1. Identifier l'émotion dominante : {question}
-    2. Analyser : {context[:200]}
+    2. Analyser : {context[:max_len]}
     3. Proposer une action concrète
     """
 

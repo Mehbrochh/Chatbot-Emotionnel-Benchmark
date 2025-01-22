@@ -1,23 +1,23 @@
-# Chatbot-Emotionnel-Benchmark
-### < 🤖 Assistant Thérapeutique - Benchmark IA >
+# <p align="center"> Chatbot-Emotionnel-Benchmark </p>
+<p align="center"> 🤖 Assistant Thérapeutique - Benchmark IA </p>
 
 
 ## 🚀 Démarrage Rapide
 
 ### Prérequis
-```bash
+
 Python >= 3.10
 
 ### **🧠 Utilisation**
 **-> _Comment exécuter le code ?_**
 
-\\ Lancer tous les modèles/prompts
+\## Lancer tous les modèles/prompts
 python argparse_qa.py
 
-\\ Tester des combinaisons spécifiques
+\## Tester des combinaisons spécifiques
 python argparse_qa.py --models gpt-4o-mini --prompts basic_qa
 
-Options disponibles
+### Options disponibles :
 
 --models :
     __all__ = [
@@ -37,12 +37,24 @@ Options disponibles
       'processcom_prompt'
     ]
 
+### 🧠 Prompts Spécialisés
+
+| Nom du Prompt          | Description                                  | Exemple d'Utilisation             |
+|------------------------|----------------------------------------------|------------------------------------|
+| `basic_qa`             | Interaction basique en 4 étapes              | Validation émotionnelle + action  |
+| `cot_reasoning`        | Analyse structurée en 3 phases               | Hypothèse thérapeutique ciblée    |
+| `reflective_listening` | Écoute active avec métaphores sensorielles    | Miroir émotionnel enrichi         |
+| `solution_focused`     | Approche orientée solutions                  | Micro-étapes personnalisées       |
+| `processcom_prompt`    | Adaptation aux canaux de communication       | Techniques PCM intégrées          |
+
+---
+
 ### 🛠 Personnalisation
 1. Améliorer les scénarios
 
 -> Éditez **Utils/Data/questions.txt** :
 
-\\ Format : Une question/par ligne !
+\## Format : Une question/par ligne !
     Je lutte contre une anxiété chronique...
     Mes relations professionnelles sont tendues...
     J'ai perdu motivation pour mes hobbies...
@@ -99,4 +111,4 @@ c -> Testez :
 
         python argparse_qa.py --models gpt-4o-mini --prompts votre_prompt
 
-N'hésitez pas à me contacter en cas de besoin !
+N'hésitez pas à me contacter en cas de besoin ! 🚀
